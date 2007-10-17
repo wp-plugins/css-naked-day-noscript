@@ -1,5 +1,6 @@
 === CSS Naked Day ===
 Contributors: ajalapus
+Donate link: http://www.ajalapus.com/donate/
 Tags: css, naked day, stylesheets, formatting, design
 Requires at least: 2.1
 Tested up to: 2.1.3
