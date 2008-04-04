@@ -2,12 +2,12 @@
 /*
 Plugin Name: CSS Naked Day
 Plugin URI: http://www.ajalapus.com/downloads/css-naked-day/
-Version: 1.1.2
+Version: 1.2
 Description: Automatically strips off stylesheets without editing themes during the Annual CSS Naked Day.
 Author: Aja Lorenzo Lapus
 Author URI: http://www.ajalapus.com/
 
-	Copyright 2007 Aja Lorenzo Lapus
+	Copyright 2007-2008 Aja Lorenzo Lapus
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -24,6 +24,8 @@ Author URI: http://www.ajalapus.com/
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 Change Log:
+v1.2 4-Apr-2008:
+	- Changed CSS Naked Day date to reflect event move from April 5 to 9.
 v1.1.2 6-Apr-2007:
 	- Fixed regex for patterns to avoid possible conflicts.
 	- Fixed known issue about escaped quotation marks in inline styles.
@@ -40,12 +42,12 @@ v1.0 28-Mar-2007:
 
 function is_naked_day() {
 	if (get_option('aja_naked_day_rechrs')) {
-		$aja_stime = gmmktime(-12, 0, 0, 4, 5); // Start of April 5 on GMT+12
-		$aja_etime = gmmktime(36, 0, 0, 4, 5);  // End of April 5 on GMT-12
+		$aja_stime = gmmktime(-12, 0, 0, 4, 9); // Start of April 9 on GMT+12
+		$aja_etime = gmmktime(36, 0, 0, 4, 9);  // End of April 9 on GMT-12
 	} else {
 		$aja_offset = get_option('gmt_offset') * 3600;
-		$aja_stime = gmmktime(0, 0, 0, 4, 5) - $aja_offset;  // Start of local April 5
-		$aja_etime = gmmktime(24, 0, 0, 4, 5) - $aja_offset; // End of local April 5
+		$aja_stime = gmmktime(0, 0, 0, 4, 9) - $aja_offset;  // Start of local April 9
+		$aja_etime = gmmktime(24, 0, 0, 4, 9) - $aja_offset; // End of local April 9
 	}
 
 	$aja_ntime = time(); // Time now
