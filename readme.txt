@@ -3,7 +3,7 @@ Contributors: ajalapus
 Donate link: http://www.ajalapus.com/donate/
 Tags: css, naked day, stylesheets, formatting, design
 Requires at least: 2.1
-Tested up to: 2.1.3
+Tested up to: 2.5
 Stable tag: trunk
 
 Automatically strips off stylesheets without editing themes during the Annual CSS Naked Day.
@@ -34,19 +34,19 @@ For more information about the event, visit: [The Official CSS Naked Day Page](h
 1. Upload `css-naked-day.php` to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Select configuration options in the Options » CSS Naked Day page.
-1. Wait until the 5th of April for the Plugin to strip your site naked.
+1. Wait until the 9th of April for the Plugin to strip your site naked.
 
 *Step 3 is optional.*
 
 = Upgrading to the latest bug fix =
 
-*(versions 1.1/1.1.1 to 1.1.2)*
+*(versions 1.1.x to 1.2)*
 
 1. Upload `css-naked-day.php` to the `/wp-content/plugins/` directory replacing the old file.
 1. Activate the plugin through the 'Plugins' menu in WordPress if you haven't already.
-1. Wait until the 5th of April for the Plugin to strip your site naked.
+1. Wait until the 9th of April for the Plugin to strip your site naked.
 
-= Upgrading 1.0.x to 1.1.x =
+= Upgrading 1.0.x to 1.2 =
 
 If you already have installed CSS Naked Day plugin with version prior to 1.1, follow the steps below.
 
@@ -55,7 +55,7 @@ If you already have installed CSS Naked Day plugin with version prior to 1.1, fo
 1. Upload the new version of the plugin.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Select configuration options in the Options » CSS Naked Day page.
-1. Wait until the 5th of April for the Plugin to strip your site naked.
+1. Wait until the 9th of April for the Plugin to strip your site naked.
 
 *Steps 1 and 2 ensures the new plugin has been activated with options. Step 5 is optional.*
 
@@ -68,9 +68,9 @@ If you already have installed CSS Naked Day plugin with version prior to 1.1, fo
 so everyone would see your page in its natural, naked form.
 1. It doesn't require the user to edit his/her theme files.
 
-= How could I display a message only on the 5th of April telling why my site is naked? =
+= How could I display a message only on the 9th of April telling why my site is naked? =
 
-Use the `is_naked_day()` function inside an `if ()` block. `is_naked_day()` returns `true` when it is April 5,
+Use the `is_naked_day()` function inside an `if ()` block. `is_naked_day()` returns `true` when it is April 9,
 otherwise it returns `false`.
 
 Example:
